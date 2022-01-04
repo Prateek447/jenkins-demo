@@ -5,6 +5,7 @@ node {
         /* Cloning the Repository to our Workspace */
 
         checkout scm
+	    git branch: 'main', url: 'https://github.com/Prateek447/jenkins-demo.git'
     }
 
     stage('Build image') {
